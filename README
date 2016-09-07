@@ -2,7 +2,7 @@ This project is comprised of multiple portions.
 
 1.) Data collection
 
-    I obtained this data set from publicly available pages on www.boardgamegeek.com. The code I wrote to do so was written in perl. The collection/consolidation/standardization of this data was not necessarily in the scope of this project, but I am including the code I wrote to do so under the 'DataCollection' subdirectory. The file titled 'collect.pl' is the entry point.
+    I obtained this data set from publicly available pages on www.boardgamegeek.com. The code I wrote to do so was written in perl. The collection/consolidation/standardization of this data was not necessarily in the scope of this project, but I am including the code I wrote to do so under the 'DataCollection' subdirectory for completeness. The file titled 'collect.pl' is the entry point.
 
     The following perl modules may or may not be included with a base perl installation, and are needed to execute this code.
     Each could be installed with the following command:
@@ -15,9 +15,11 @@ This project is comprised of multiple portions.
      - HTTP::Cookies
      - Time::HiRes
 
+
 2.) Data Consolidation
 
     The collection of data occurred over several days. To enable restarting upon failure, or after network errors, I wrote each observation (game) to a separate JSON file as it was collected. I then had to post-process these JSON files to create the single CSV of data that became the starting point for subsequent evaluation. The individual JSON files are not included in the 'Data' subdirectory, as their content is redundant.
+
 
 3.) Modeling and Evaluation
 
