@@ -1,0 +1,33 @@
+This project is comprised of multiple portions.
+
+1.) Data collection
+
+    I obtained this data set from publicly available pages on www.boardgamegeek.com. The code I wrote to do so was written in perl. The collection/consolidation/standardization of this data was not necessarily in the scope of this project, but I am including the code I wrote to do so under the 'DataCollection' subdirectory. The file titled 'collect.pl' is the entry point.
+
+    The following perl modules may or may not be included with a base perl installation, and are needed to execute this code.
+    Each could be installed with the following command:
+    > cpan <moduleName>
+     - JSON
+     - Text::CSV
+     - Statistics::Basic
+     - FindBin
+     - LWP::UserAgent
+     - HTTP::Cookies
+     - Time::HiRes
+
+2.) Data Consolidation
+
+    The collection of data occurred over several days. To enable restarting upon failure, or after network errors, I wrote each observation (game) to a separate JSON file as it was collected. I then had to post-process these JSON files to create the single CSV of data that became the starting point for subsequent evaluation. The individual JSON files are not included in the 'Data' subdirectory, as their content is redundant.
+
+3.) Modeling and Evaluation
+
+    This portion comprised the bulk of the project, and was implemented in python, within an iPython notebook. Executing this notebook to completion requires an hour or more, depending on the speed/size of the hardware used, and the number of jobs set via a variable at the top of the notebook. A PDF of the notebook executed to completion is included in the 'Notebook' subdirectory.
+
+    The following python packages would be needed to execute this notebook. Each could be installed with the following command:
+    > pip install <package_name>
+     - numpy        (1.11.1 used)
+     - pandas       (0.13.1 used)
+     - matplotlib   (1.5.1 used, for ggplot)
+     - sklearn      (0.17 used)
+     - scipy        (0.13.3)
+
