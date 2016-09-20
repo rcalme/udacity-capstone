@@ -20,4 +20,7 @@ I stacked the results of the above learners with the LassoCV estimator, and obta
 
 By creating artificial feature vectors, I could approximate 100,000 additional non-existent games, and predict their scores with this model. I then used this data in an attempt to draw some conclusions about highly- and poorly-rated games.
 
-![Distribution of Games by Rating](https://github.com/rcalme/udacity-capstone/img/rating_distribution.png)
+![By category](https://github.com/rcalme/udacity-capstone/img/by_category.png)
+![By mechanic](https://github.com/rcalme/udacity-capstone/img/by_mechanic.png)
+
+See the [final report](https://github.com/rcalme/udacity-capstone/Report/Report.pdf) for more detail.
