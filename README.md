@@ -5,7 +5,7 @@ For my capstone in the [Udacity Machine Learning Nanodegree program](https://www
 1. Attempt to fit a model to a set of board game features, in an attempt to predict game ratings.
 2. Use this model to provide insight into the characteristics of highly- and poorly-rated games.
 
-The data used in this project come from [BoardGameGeek.com](http://www.boardgamegeek.com/browse/boardgame), and consist of 159 features for each of 84.593 games, each rated by the user community on a 1-10 scale. The ratings were distribued as follows:
+The data used in this project come from [BoardGameGeek.com](http://www.boardgamegeek.com/browse/boardgame), and consist of 159 features for each of 84,593 games, each rated by the user community on a 1-10 scale. The ratings were distribued as follows:
 
 ![Distribution of Games by Rating](https://raw.githubusercontent.com/rcalme/udacity-capstone/master/img/rating_distribution.png)
 
