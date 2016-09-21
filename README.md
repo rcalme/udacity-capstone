@@ -2,7 +2,7 @@
 
 For my capstone in the [Udacity Machine Learning Nanodegree program](https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009), I applied machine learning techniques to a set of data regarding board games. My intent was two-fold:
 
-1. Attempt to fit a model to a set of board game features, in an attempt to predict game ratings.
+1. Fit a supervised learning model to a set of board game features, to predict game ratings.
 2. Use this model to provide insight into the characteristics of highly- and poorly-rated games.
 
 The data used in this project come from [BoardGameGeek.com](http://www.boardgamegeek.com/browse/boardgame), and consist of 159 features for each of 84,593 games, each rated by the user community on a 1-10 scale. The ratings were distribued as follows:
