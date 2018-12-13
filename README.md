@@ -16,6 +16,7 @@ I created models using the following learners:
 * Gradient Boosting Regression
 
 I stacked the results of the above learners with the LassoCV estimator, and obtained a final model with a correlation of **0.809**.
+
 ![Comparative performance of models](https://raw.githubusercontent.com/rcalme/udacity-capstone/master/img/comparative_model_performance.png)
 
 By creating artificial feature vectors, I could approximate 100,000 additional non-existent games, and predict their scores with this model. I then used this data in an attempt to draw some conclusions about highly- and poorly-rated games.
